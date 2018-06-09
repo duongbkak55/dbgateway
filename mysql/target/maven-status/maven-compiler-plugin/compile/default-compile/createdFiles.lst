@@ -1,0 +1,3 @@
+com\bkexpress\dbgateway\aerospike\DBFactory\AerospikeFactory.class
+com\bkexpress\dbgateway\aerospike\query\MySQLQueryAPI.class
+com\bkexpress\dbgateway\aerospike\update\MySQLUpdateAPI.class

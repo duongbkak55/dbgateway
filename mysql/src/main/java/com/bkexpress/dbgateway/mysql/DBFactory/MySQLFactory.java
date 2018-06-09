@@ -1,11 +1,10 @@
-package com.bkexpress.dbgateway.aerospike.DBFactory;
+package com.bkexpress.dbgateway.mysql.DBFactory;
 
 import com.aerospike.client.Bin;
 import com.aerospike.client.Host;
 import com.aerospike.client.Key;
 import com.aerospike.client.Record;
 import com.aerospike.client.async.AsyncClient;
-import com.aerospike.client.policy.ClientPolicy;
 import com.aerospike.client.policy.QueryPolicy;
 import org.apache.log4j.Logger;
 
@@ -15,9 +14,9 @@ import java.io.IOException;
 import java.util.Properties;
 
 
-public class AerospikeFactory {
+public class MySQLFactory {
 
-    Logger logger = Logger.getLogger(AerospikeFactory.class);
+    Logger logger = Logger.getLogger(MySQLFactory.class);
     //<editor-fold desc="Define Variables">
     private AsyncClient client = null;
     //FIXME load queryPolicy from config
@@ -28,12 +27,12 @@ public class AerospikeFactory {
 
 
     //<editor-fold desc="Singleton Aerospike Instance">
-    private static AerospikeFactory instance = null;
+    private static MySQLFactory instance = null;
 
 
-    public static synchronized AerospikeFactory getInstance() {
+    public static synchronized MySQLFactory getInstance() {
         if (instance == null) {
-            instance = new AerospikeFactory();
+            instance = new MySQLFactory();
         }
         return instance;
     }
@@ -53,7 +52,7 @@ public class AerospikeFactory {
         }
     }
 
-    public AerospikeFactory() {
+    public MySQLFactory() {
         config("../etc/aerospike.conf");
     }
 

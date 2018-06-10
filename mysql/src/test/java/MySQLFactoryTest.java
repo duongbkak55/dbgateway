@@ -1,4 +1,5 @@
-import com.bkexpress.dbgateway.aerospike.DBFactory.MySQLFactory;
+
+import com.bkexpress.dbgateway.mysql.DBFactory.MySQLFactory;
 import org.junit.Test;
 
 public class MySQLFactoryTest {

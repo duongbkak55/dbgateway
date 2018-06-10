@@ -1,6 +1,7 @@
 package com.bkexpress.dbgateway.manage;
 
-import com.bkexpress.dbgateway.aerospike.query.MySQLQueryAPI;
+
+import com.bkexpress.dbgateway.mysql.query.MySQLQueryAPI;
 
 public class Manager {
     public static void main(String[] args) {
@@ -8,7 +9,7 @@ public class Manager {
     }
 
     public void queryVehicleOwner(){
-        MySQLQueryAPI.getInstace().query("vgo","vehicle_owner","test",null);
+        MySQLQueryAPI.getInstace();
 
     }
 }

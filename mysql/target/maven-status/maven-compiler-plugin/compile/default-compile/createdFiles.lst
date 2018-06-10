@@ -1,3 +1,6 @@
-com\bkexpress\dbgateway\aerospike\DBFactory\AerospikeFactory.class
-com\bkexpress\dbgateway\aerospike\query\MySQLQueryAPI.class
-com\bkexpress\dbgateway\aerospike\update\MySQLUpdateAPI.class
+com\bkexpress\dbgateway\mysql\adapter\VehicleAdapter.class
+com\bkexpress\dbgateway\mysql\update\MySQLUpdateAPI.class
+com\bkexpress\dbgateway\mysql\object\Vehicle.class
+com\bkexpress\dbgateway\mysql\object\BaseObject.class
+com\bkexpress\dbgateway\mysql\DBFactory\MySQLFactory.class
+com\bkexpress\dbgateway\mysql\query\MySQLQueryAPI.class
